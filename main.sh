@@ -1,7 +1,7 @@
 import subprocess
 
 def runfinder():
-    command = "python finder.py -w 39 -t 500 -p proxies.txt"
+    command = "python finder.py -w 32 -t 200 -p proxies.txt"
     try:
         subprocess.run(command, shell=True, check=True)
     except subprocess.CalledProcessError as e:
